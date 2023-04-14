@@ -1,0 +1,17 @@
+//! COLORS
+$main_color: #094067;
+$secondary_color: #EBA83A;
+$paragraph_color: #5F6C7B;
+$bluebg_color: #D8EEFE;
+
+// WIDTH
+$container_width_lg: 80%;
+$container_width_md: 90%;
+$container_width_sm: 94%;
+
+// Transition
+$transition: all ease-in-out 400ms;
+
+//? Fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito:regular,500,600,900&display=swap);
