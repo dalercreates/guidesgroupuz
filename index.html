@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <!--SWIPER-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -78,7 +80,7 @@
            </div>
     </nav>
 
-    <main class="container main__container">
+    <main class="container main__container" data-aos="zoom-out">
         <div class="main__info">
             <h1>Туры и экскурсии по Узбекистану!</h1>
             <p>
@@ -95,8 +97,8 @@
     </main>
 
     <section id="cities" class="container cities__container">
-        <h2>Какой город вас интересует?</h2>
-        <div class="cities__cards">
+        <h2 data-aos="zoom-in">Какой город вас интересует?</h2>
+        <div data-aos="zoom-in" class="cities__cards">
             <div class="city__card">
                 <p>Самарканд<br>Жемчужина Востока</p>
                 <a class="btn__third" href="#">Подробнее</a>
@@ -132,8 +134,8 @@
 
     <section id="about" class="about">
         <div class="container about__container">
-            <h2>Почему стоит выбрать нас?</h2>
-            <div class="about__cards">
+            <h2 data-aos="zoom-in">Почему стоит выбрать нас?</h2>
+            <div data-aos="zoom-in" class="about__cards">
                 <div class="about__card">
                     <h3>Гибкость</h3>
                     <p>
@@ -189,9 +191,9 @@
 
     <section id="reviews" class="reviews">
         <div class="container reviews__container">
-            <h2>Отзывы наших гостей</h2>
+            <h2 data-aos="zoom-in">Отзывы наших гостей</h2>
         </div>
-        <div class="swiper mySwiper">
+        <div data-aos="zoom-in" class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide">
@@ -420,11 +422,11 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-        <a class="btn__primary btn__review" href="../html/forms.html">Оставить отзыв</a>
+        <a data-aos="zoom-in" class="btn__primary btn__review" href="../html/forms.html">Оставить отзыв</a>
     </section>
 
     <footer id="contacts">
-        <div class="container footer__container">
+        <div data-aos="zoom-in" class="container footer__container">
             <h2>Путешествуй с нами!</h2>
             <div class="footer__info">
                 <a href="https://www.google.com/maps/place/%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82/data=!4m2!3m1!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98?sa=X&ved=2ahUKEwjb-8qDlO_9AhXSHXcKHZdqAAAQ8gF6BQiAARAB">Ташкент, Узбекистан</a>
@@ -490,6 +492,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
