@@ -1,0 +1,148 @@
+@import "imports.scss";
+
+section#excursions {
+  margin: 0;
+}
+.excursions__container {
+  h2 {
+    margin-top: 100px;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+.excursions__card {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  img {
+    width: 530px;
+    height: 480px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+.excursions__card-reverse {
+  flex-direction: row-reverse;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.excursions__card-text {
+  width: 540px;
+  h4 {
+    width: 500px;
+    margin-bottom: 30px;
+  }
+  p {
+    line-height: 170%;
+  }
+  span {
+    display: block;
+    margin-top: 15px;
+    font-weight: 700;
+  }
+}
+.excursions__details {
+  li {
+    width: fit-content;
+    list-style-type: disc;
+    color: $paragraph_color;
+    padding: 15px;
+    margin-left: 50px;
+  }
+}
+.btn__review {
+  margin: 50px auto 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .excursions__card {
+    width: fit-content;
+    gap: 30px;
+    img {
+      width: 450px;
+      height: 390px;
+    }
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .excursions__container {
+    h2 {
+      margin-top: 50px;
+    }
+    h3 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  .excursions__card {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .excursions__card-reverse {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .excursions__card-text {
+    width: 510px;
+    margin: 0 auto;
+    h4 {
+      width: 390px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .excursions__card {
+    img {
+      width: 280px;
+      height: 250px;
+    }
+  }
+  .excursions__card-text {
+    width: 390px;
+    h4 {
+      width: 390px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .excursions__details {
+    li {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .excursions__card {
+    img {
+      width: 280px;
+      height: 250px;
+    }
+  }
+  .excursions__card-text {
+    width: 300px;
+    h4 {
+      width: 300px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

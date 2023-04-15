@@ -63,13 +63,6 @@ for (const closePopup of closePopups) {
     });
 }
 
-// AOS ANIM
-AOS.init({
-    offset: 400,
-    duration: 1000,
-    once: true
-});
-
 
 // swiper JS
 new Swiper(".mySwiper", {

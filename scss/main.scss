@@ -3,33 +3,6 @@
 @import "reviews.scss";
 @import "popup.scss";
 
-// MAIN
-.main__container {
-  padding-top: 200px;
-  display: flex;
-  justify-content: space-between;
-}
-.main__info {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  width: 560px;
-  p {
-    line-height: 34px;
-  }
-}
-.main__info-buttons {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.main__img img {
-  border-radius: 15px;
-  width: 630px;
-  height: 430px;
-}
-// MAIN END
-
 // ABOUT
 #about {
   scroll-margin: 100px;
@@ -65,13 +38,6 @@
 // ABOUT END
 
 @media screen and (max-width: 1440px) {
-  .main__info {
-    width: 500px;
-  }
-  .main__img img {
-    width: 470px;
-    height: 323px;
-  }
   .about__container {
     h2 {
       padding-top: 50px;
@@ -90,21 +56,6 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .main__container {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-  .main__info {
-    width: 500px;
-    text-align: center;
-  }
-  .main__info-buttons {
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-  }
   .about__cards {
     grid-template-columns: 1fr;
     gap: 18px;
@@ -116,31 +67,7 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
-  .main__container {
-    padding-top: 150px;
-    gap: 20px;
-  }
-  .main__info {
-    gap: 20px;
-    width: 450px;
-  }
-  .main__img img {
-    width: 370px;
-    height: 300px;
-  }
-  .main__info-buttons {
-    gap: 30px;
-  }
-}
 @media screen and (max-width: 480px) {
-  .main__img img {
-    width: 280px;
-    height: 240px;
-  }
-  .main__info {
-    width: 300px;
-  }
   .about__card {
     height: fit-content;
     padding: 18px;

@@ -8,7 +8,7 @@
   background-color: transparent;
   z-index: 22;
   transform: translateY(-100%) scale(0);
-  transition: $transition;
+  transition: all 400ms ease-in-out;
 }
 .popup.active {
   transform: translateY(0%) scale(100%);
