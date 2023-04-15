@@ -1,0 +1,127 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  background-color: transparent;
+  z-index: 22;
+  transform: translateY(-100%) scale(0);
+  transition: $transition;
+}
+.popup.active {
+  transform: translateY(0%) scale(100%);
+}
+.popup__bg.popup__close {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popup__body {
+  margin: auto;
+  width: 630px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 24px;
+  position: relative;
+  h4 {
+    font-size: 24px;
+    width: 280px;
+  }
+}
+.popup__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+.popup__body-socials {
+  margin: 81px 0 81px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.popup__body-socials-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+  transition: $transition;
+  p {
+    color: #fff;
+  }
+  svg {
+    fill: #fff;
+  }
+  &:hover {
+    background-color: $main_color;
+  }
+}
+.popup__body-socials-telegram {
+  background-color: #3EB9F6;
+}
+.popup__body-socials-whatsapp {
+  background-color: #29E64E;
+}
+.popup__body-socials-instagram {
+  background-color: #C72F6E;
+}
+.popup__body-socials-telephone {
+  background-color: $main_color;
+}
+
+@media screen and (max-width: 1024px) {
+  .popup__body {
+    width: 530px;
+    height: 300px;
+    padding: 20px;
+  }
+  .popup__close {
+    top: 20px;
+    right: 20px;
+  }
+  .popup__body-socials {
+    margin: 50px 0 50px 0;
+    gap: 20px;
+  }
+  .popup__body-socials-block {
+    gap: 20px;
+    width: 220px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup__body {
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    h4 {
+      font-size: 18px;
+    }
+  }
+  .popup__body-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .popup__body {
+    width: 300px;
+    h4 {
+      width: 180px;
+    }
+  }
+}

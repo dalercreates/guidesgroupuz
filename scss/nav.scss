@@ -5,8 +5,21 @@ nav {
   padding: 40px 0;
   z-index: 10;
   transition: $transition;
+  animation-name: fadeInTop;
+  animation-duration: 1s;
+  animation-timing-function:cubic-bezier(1, 0, 0, 1);
   &.sticky {
     background-color: $bluebg_color;
+  }
+}
+@keyframes fadeInTop {
+  from {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .nav__container {
