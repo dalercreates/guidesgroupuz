@@ -3,6 +3,7 @@ const nav = document.getElementById('nav');
 const dropdownButton = document.getElementById('dropdown-btn');
 const toggleBtn = document.getElementById('toggle-menu');
 const mobileNav = document.getElementById('mobile__nav');
+const mobileNavLinks = document.querySelectorAll('.mobile__nav-link');
 
 let scrolled = false
 document.addEventListener('scroll', () => {
@@ -25,7 +26,6 @@ dropdownButton.addEventListener('click', () => {
 });
 
 // mobile nav
-
 toggleBtn.addEventListener('click', () => {
     if (toggleBtn.classList.contains('checked')) {
         toggleBtn.classList.remove('checked');
@@ -39,6 +39,16 @@ toggleBtn.addEventListener('click', () => {
         nav.classList.add('sticky');
     }
 });
+
+for (let navLink of mobileNavLinks) {
+    navLink.addEventListener('click', () => {
+        toggleBtn.classList.remove('checked');
+        mobileNav.classList.remove('active');
+        if (!scrolled) {
+            nav.classList.remove('sticky');
+        }
+    });
+}
 
 // popup
 const openPopups = document.querySelectorAll(".open__popup");

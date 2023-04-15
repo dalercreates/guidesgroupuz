@@ -146,13 +146,13 @@ nav {
     }
     &.checked .bar {
       &:first-of-type {
-        transform: rotate(45deg) translateY(8px);
+        transform: rotate(45deg) translateY(4px);
       }
       &:nth-child(2) {
-        opacity: 0;
+        display: none;
       }
       &:last-of-type {
-        transform: rotate(-45deg) translateY(-8px);
+        transform: rotate(-45deg) translateY(-4px);
       }
     }
   }
