@@ -4,7 +4,6 @@ const dropdownButton = document.getElementById('dropdown-btn');
 const toggleBtn = document.getElementById('toggle-menu');
 const mobileNav = document.getElementById('mobile__nav');
 const mobileNavLinks = document.querySelectorAll('.mobile__nav-link');
-
 let scrolled = false
 document.addEventListener('scroll', () => {
     if (scrollY > 0) {
@@ -72,7 +71,6 @@ for (const closePopup of closePopups) {
         }
     });
 }
-
 
 // swiper JS
 new Swiper(".mySwiper", {
