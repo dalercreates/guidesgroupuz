@@ -168,6 +168,35 @@ section h2, footer h2 {
   border: none;
 }
 
+.btn__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 170px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #5F6C7B;
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+}
+.btn__review:hover {
+  background-color: #094067;
+  color: #fff;
+}
+
+.btn__center {
+  margin: 50px auto 0 auto;
+}
+
 @media screen and (max-width: 1440px) {
   header, main, section, footer {
     padding: 0 0 80px 0;
@@ -180,6 +209,9 @@ section h2, footer h2 {
   }
   .btn__third {
     height: 50px;
+  }
+  .btn__review {
+    width: 250px;
   }
   h1 {
     font-size: 52px;
@@ -211,6 +243,11 @@ section h2, footer h2 {
   .btn__third {
     font-size: 16px;
     height: 45px;
+  }
+  .btn__review {
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
   }
   h1 {
     font-size: 36px;
@@ -246,6 +283,11 @@ section h2, footer h2 {
     font-size: 14px;
     border-radius: 10px;
     width: 150px;
+  }
+  .btn__review {
+    font-size: 14px;
+    border-radius: 10px;
+    width: 180px;
   }
   h1 {
     font-size: 32px;
@@ -706,10 +748,6 @@ nav.sticky {
 .swiper-button-next:hover::after,
 .swiper-button-prev:hover::after {
   color: #094067;
-}
-
-.btn__review {
-  margin: 50px auto 0 auto;
 }
 
 @media screen and (max-width: 1440px) {
